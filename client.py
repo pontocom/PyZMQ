@@ -2,6 +2,8 @@ import zmq
 
 context = zmq.Context()
 
+# implements the REQuest/REPly paradigm
+
 print("Connecting to server...")
 socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:5555")

@@ -1,6 +1,8 @@
 import time
 import zmq
 
+# implements the REQuest/REPly paradigm 
+
 context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")
